@@ -9,7 +9,7 @@ var palyer, playerBase, playerArcher;
 var playerArrows = [];
 var numberOfArrows = 10;
 var board1, board2;
-var score = []
+var score = 0
 
 function preload() {
   backgroundImg = loadImage("assets/background.png");
@@ -80,7 +80,7 @@ function draw() {
 
       if (board1Collision.collided || board2Collision.collided) {
         score+=5;
-     //   console.log("yes");
+        console.log("yes");
       }
 
 
